@@ -12,7 +12,7 @@ public class i18nConfig {
 	private static final org.slf4j.Logger LOGGER = LoggerFactory.getLogger(DevopsBuddyApplication.class);
 	@Bean 
 	 public ReloadableResourceBundleMessageSource messageSource() {
-		LOGGER.info("The class i s statrd");
+		LOGGER.info("The twitter prog is started");
         ReloadableResourceBundleMessageSource resourceBundleMessageSource = new ReloadableResourceBundleMessageSource();
         resourceBundleMessageSource.setBasename("classpath:i18n/messages");
         // Checks for new messages every 30 minutes

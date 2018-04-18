@@ -7,6 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 	@RequestMapping("/")
 	public String home() {
+		
+		
+		
 		return "index";
 	}
+	@RequestMapping("/contact")
+	public String contactpage() {
+		return "contact";
+	}
+	@RequestMapping("/about")
+	public String about() {
+		return "about";
+	}
+	
 }

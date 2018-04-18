@@ -2,3 +2,5 @@ logging:
   level:
     com.lighting.interact.datagenerator: '${LOG_LEVEL:DEBUG}'
     org.springframework.web: '${LIB_LOG_LEVEL:INFO}'
+server :
+   port : 8503

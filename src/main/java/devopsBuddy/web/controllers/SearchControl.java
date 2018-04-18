@@ -31,11 +31,10 @@ private final TwitterTemplate twitterTemplate;
 	        ListIterator<Tweet> itr=tweets.listIterator();  
 	        int i=0;
 	       while(itr.hasNext()==true) {
-	    	  // processTweetUserId(itr.next().getText());
-	       // System.out.println("and tweets read is :"+itr.next().getId());
+	    	   processTweetUserId(itr.next().getText());
+	        System.out.println("and tweets read is :"+itr.next().getText());
 	        i++;
 	       }
-	       processTweetUserId(itr.next().getText());
 	       
 	       System.out.println("The total number of tweets are :"+i);
 	        model.addAttribute("tweets", tweets);
@@ -45,11 +44,8 @@ private final TwitterTemplate twitterTemplate;
 	    }
 
 	 
-	 public void processTweetUserId(String text) {
-		 String[] words=text.split("\\s+");
-		 for (int i = 0, l = words.length; i + 1 < l; i++)
-		        System.out.println(words[i] + " " + words[i + 1]);
-		 //System.out.print("The user id  :"+text.trim());
+	 public void processTweetUserId(String userID) {
+		 System.out.print("The user id  :"+userID);
 	 }
 
 }

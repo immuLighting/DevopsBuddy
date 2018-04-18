@@ -35,7 +35,7 @@ private final TwitterTemplate twitterTemplate;
 	       // System.out.println("and tweets read is :"+itr.next().getId());
 	        i++;
 	       }
-	       processTweetUserId(itr.next().getText());
+	       processTweetUserId(tweets.get(1).getText());
 	       
 	       System.out.println("The total number of tweets are :"+i);
 	        model.addAttribute("tweets", tweets);
